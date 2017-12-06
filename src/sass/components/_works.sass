@@ -1,5 +1,6 @@
 .works
 	position: relative
+	z-index: 1
 	&:before
 		content: ''
 		position: absolute
@@ -20,7 +21,7 @@
 		+sm
 			float: none
 	&__content
-		padding: 90px 73px 95px 0
+		padding: 90px 73px 75px 0
 		+md 
 			width: 70%
 		+sm 
@@ -34,9 +35,9 @@
 			padding-top: 0
 			width: 100%
 	&__slider-in
-		margin: 0 -27px -57px
-		+sm 
-			margin: 0 -27px -68px
+		margin: 0 -27px -62px
+		+md
+			margin: 0 -27px -98px
 		+xs 
 			margin-left: -20px
 			margin-right: -20px
