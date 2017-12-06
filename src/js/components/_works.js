@@ -30,6 +30,15 @@ import { widthSM, widthXS } from '../_constants';
             swipe: true,
             fade: false,
             centerMode: true,
+            centerPadding: '27.4%'
+          }
+        },
+        {
+          breakpoint: 550,
+          settings: {
+            swipe: true,
+            fade: false,
+            centerMode: true,
             centerPadding: '18.4%'
           }
         },
@@ -44,7 +53,6 @@ import { widthSM, widthXS } from '../_constants';
 
     $slider.on('afterChange', (e, slick, current) => {
       if (!window.matchMedia(`(max-width: ${widthSM}px)`).matches) return;
-      console.log(current);
       range.noUiSlider.set(current);
     });
 
