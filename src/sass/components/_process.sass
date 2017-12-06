@@ -1,0 +1,64 @@
+.process
+	position: relative
+	z-index: 1
+	&:before
+		content: ''
+		position: absolute
+		top: -45px
+		left: -84px
+		width: 168px
+		height: 168px
+		background-image: linear-gradient(-181deg, rgba(255,139,205,0.00) 0%, #FF539E 100%)
+		+sm 
+			top: -44px
+			left: -89px
+			width: 118px
+			height: 118px
+	&__inner
+		padding-top: 94px
+		padding-bottom: 47px
+		+sm 
+			padding-top: 14px
+			padding-bottom: 67px
+	&__img
+		padding-left: 1.286%
+		font-size: 0
+		overflow: hidden
+		pointer-events: none
+		+md 
+			padding: 0
+		+sm
+			position: absolute
+			z-index: -1
+			left: 50%
+			bottom: 0
+			width: 550px
+			max-width: unset
+			transform: translate3d(-61%,60%,0)
+		img 
+			width: 100%
+		&-in
+			float: right
+			max-width: 569px
+			+sm 
+				max-width: unset
+	&__content
+		padding-top: 3px
+		+md 
+			padding: 0
+	&__content,
+	&__img
+		float: left
+		width: 50%
+		+md 
+			float: none
+			margin: 0 auto
+			width: auto 
+			max-width: 512px
+	&__title
+		margin-bottom: 28px
+		+sm 
+			padding: 0 8px 0 13px
+			margin-bottom: 26px
+	&__description
+		max-width: 512px
