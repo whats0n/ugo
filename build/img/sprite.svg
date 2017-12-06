@@ -3,4 +3,36 @@
         facebook
     </title>
     <path d="M9.766.157v2.946H8.014c-.64 0-1.071.134-1.295.402-.223.268-.335.67-.335 1.205v2.11h3.27l-.435 3.303H6.384v8.471H2.97v-8.47H.123V6.82H2.97V4.387c0-1.384.387-2.457 1.161-3.22C4.904.404 5.934.023 7.222.023c1.093 0 1.941.045 2.544.134z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-uruguay" viewBox="0 0 15 15">
+    <title>
+        Group 7 Copy
+    </title>
+    <g fill-rule="evenodd">
+        <path d="M15 10h-5V5h5z"/>
+        <path d="M10 10H5V5h5z"/>
+        <path d="M15 15h-5v-5h5z"/>
+        <path d="M10 15H5v-5h5z"/>
+        <g>
+            <rect width="10" height="10" rx="5"/>
+        </g>
+    </g>
+</symbol><symbol id="icon-us" viewBox="0 0 15 14">
+    <title>
+        Group 7
+    </title>
+    <g fill-rule="evenodd">
+        <path d="M15 9h-5V4h5z"/>
+        <path d="M10 9H5V4h5z"/>
+        <path d="M15 14h-5V9h5z"/>
+        <path d="M10 14H5V9h5z"/>
+        <g>
+            <path d="M0 0h9v9H0z"/>
+            <g transform="translate(1.714 1.714)">
+                <circle cx=".964" cy=".964" r="1"/>
+                <circle cx=".964" cy="4.179" r="1"/>
+                <circle cx="4.179" cy=".964" r="1"/>
+                <circle cx="4.179" cy="4.179" r="1"/>
+            </g>
+        </g>
+    </g>
 </symbol></svg>
