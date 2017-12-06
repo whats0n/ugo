@@ -4,19 +4,48 @@
 	<div class="ready">
 		<div class="ready__inner inner">
 			<div class="ready__subtitle">AND WE ARE</div>
-			<div class="ready__title title-bigger">READY WHEN YOU ARE.</div>
+			<h3 class="ready__title title-big">READY WHEN YOU ARE.</h3>
 		</div>
 	</div>
 	<!-- end ready -->
-	<!-- begin form -->
-	<div class="form">
-		<form action="/">
-			
-		</form>
-	</div>
 	<!-- end form -->
 	<div class="footer__inner inner">
+		<!-- begin form -->
+		<div class="footer__form form">
+			<form action="/">
+				<div class="form__title title-md">
+					SO!<br>
+					<strong class="color-spray">DROP US A LINE</strong><br>
+					AND WE WILL GET BACK TO YOU ASAP :)
+				</div>
+				<div class="form__wrap">
+					<label class="field js-field">
+						<span class="field__label">Name</span>
+						<input type="text" name="name" class="input js-field-input">
+					</label>
+					<label class="field js-field">
+						<span class="field__label">Email</span>
+						<input type="text" name="email" class="input js-field-input">
+					</label>
+					<label class="field js-field">
+						<span class="field__label">Phone</span>
+						<input type="text" name="phone" class="input js-field-input">
+					</label>
+					<label class="field js-field">
+						<span class="field__label">Message</span>
+						<textarea name="message" class="textarea js-field-input"></textarea>
+					</label>
+					<div class="form__footer">
+						<button class="form__btn btn" type="submit">
+							<span>SEND MESSAGE</span>
+							{{ mixins.icon('arr-right') }}
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
 		<div class="footer__top">
+			<!-- begin contacts -->
 			<div class="contacts">
 				<div class="contacts__col">
 					<div class="contacts__icon">
@@ -35,6 +64,7 @@
 					<p><a href="tel:19419000806">+ 19419000806</a></p>
 				</div>
 			</div>
+			<!-- end contacts -->
 		</div>
 		<div class="footer__bottom">
 			<a href="#" class="footer__logo">

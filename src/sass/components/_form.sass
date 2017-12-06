@@ -1,0 +1,75 @@
+.form
+	padding: 40px 28px 68px 56px
+	width: 494px
+	background: $outerSpace
+	box-shadow: 0 17px 39px 0 rgba(0,0,0,0.41)
+	border-radius: 12px
+	&__title
+		letter-spacing: .0001em 
+	&__wrap
+		margin-top: 36px
+		width: 382px
+	&__footer
+		margin-top: 46px
+		margin-left: -4px 
+	&__btn
+		width: 100%
+.field
+	position: relative
+	display: block
+	&:not(:first-child)
+		margin-top: 40px
+	&.is-active
+		.field__label
+			opacity: 0.5
+			transform: translate3d(0,-73%,0)
+	&__label
+		position: absolute
+		top: 2px
+		left: 0
+		right: 0
+		color: $white
+		font-family: $lato
+		+f(15, 1.3, -0.02, 700)
+		transition: transform 0.3s, opacity 0.3s
+		pointer-events: none
+
+
+.input,
+.textarea
+	padding: 4px 0
+	width: 100%
+	height: 46px
+	font-family: $lato
+	color: $white
+	font-family: $lato
+	+f(15, 1.3, -0.02, 700)
+	border: none
+	border-bottom: 1px solid rgba($white, 0.3)
+	border-radius: 0 !important
+	background-color: transparent 
+	display: block
+
+.textarea
+	resize: none
+	
+.btn
+	padding: 23px 40px
+	font-family: $montserrat
+	font-size: 24px
+	line-height: 1
+	font-weight: 700 
+	vertical-align: top
+	text-transform: uppercase
+	border-radius: 0
+	transition: background-color .3s, box-shadow .3s
+	box-shadow: 0 7px 15px 0 rgba(0,0,0,0.50)
+	background-color: $spray
+	display: inline-block
+	+hover
+		background-color: darken($spray, 20)
+		box-shadow: 0 2px 10px 0 rgba(0,0,0,0.50)
+	.icon-arr-right
+		font-size: 20px
+		vertical-align: top
+		margin-top: 1px
