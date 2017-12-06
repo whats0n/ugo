@@ -14,6 +14,37 @@
 		margin-left: -4px 
 	&__btn
 		width: 100%
+		
+.trigger
+	position: fixed
+	bottom: 0
+	margin-left: -56px 
+	z-index: 100
+	padding: 27px 75px 27px 55px
+	width: 494px 
+	color: $spray
+	font-family: $montserrat
+	font-size: 24px
+	line-height: 1
+	letter-spacing: -0.0003em 
+	font-weight: 700 
+	text-transform: uppercase
+	border-radius: 12px 12px 0 0 
+	box-shadow: 0 17px 39px 0 rgba(0,0,0,0.41)
+	transition: opacity .3s, visibility .3s
+	background: $outerSpace
+	display: block
+	&.is-hidden
+		opacity: 0
+		visibility: hidden
+	&:before
+		position: absolute
+		content: ""
+		top: 50%
+		margin-top: -9px
+		right: 54px
+		+arr(22,18,#FFE886,t) 
+	
 .field
 	position: relative
 	display: block
@@ -37,7 +68,7 @@
 
 .input,
 .textarea
-	padding: 4px 0
+	padding: 12px 0
 	width: 100%
 	height: 46px
 	font-family: $lato
