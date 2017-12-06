@@ -1,0 +1,74 @@
+.hero
+	&__top
+		position: relative
+		background: url(../img/hero-bg.jpg) no-repeat center top
+		background-size: cover
+		+r(375)
+			background-image: url(../img/hero-bg-mobile.jpg)
+		&:before,
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			background: $black
+		&:before
+			bottom: 0
+			opacity: 0.3
+		&:after
+			height: 8px
+			opacity: 0.32
+			+sm
+				display: none
+	&__bottom
+		&:after
+			content: ''
+			display: block
+			height: 1px
+			background-image: linear-gradient(to left, #C2C2C2 0%, #F4F4F4 100%)
+	&__inner
+		padding-top: 4.851%
+		padding-bottom: 6.645%
+		font-size: 0
+		+sm 
+			padding-top: 28px
+			padding-bottom: 28px
+	&__img
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 55%
+		transform: translate3d(0,32%,0)
+		pointer-events: none
+		+sm 
+			display: none
+		img 
+			max-width: 100%
+	&__content
+		float: right
+		padding: 0 6.155% 0 5.3%
+		width: 50%
+		+sm 
+			float: none
+			padding: 0
+			width: auto
+	&__logo
+		display: block
+		margin-bottom: 41px
+		width: 29.796%
+		mix-blend-mode: overlay
+		+sm 
+			margin-bottom: 29px
+			width: 103px
+	&__title
+		max-width: 100%
+	&__text
+		padding-top: 4.274%
+		padding-bottom: 3.932%
+		color: $text
+		+f(20, 1.1)
+		+sm 
+			display: none
+		+xl 
+			+f(18)
