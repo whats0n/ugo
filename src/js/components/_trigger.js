@@ -12,7 +12,7 @@ import { HIDDEN, HTMLBODY, WIN } from '../_constants';
   });
 
   WIN.on('scroll', function() {
-    let winOffset = HTMLBODY.scrollTop() + WIN.height();
+    let winOffset = WIN.scrollTop() + WIN.outerHeight();
     let blockOffset = $form.offset().top + $trigger.outerHeight();
     (winOffset >= blockOffset) 
     	? $trigger.addClass(HIDDEN)

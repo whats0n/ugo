@@ -23,6 +23,7 @@ import { widthSM, widthXS } from '../_constants';
       fade: true,
       arrows: false,
       swipe: false,
+      speed: 700,
       responsive: [
         {
           breakpoint: widthSM+1,

@@ -12,18 +12,20 @@
 		</div>
 		<div class="works__slider works__col">
 			{% set slider = [
-				{ alt: 'Reporte Gráfico' },
-				{ alt: 'Gimnasios' },
-				{ alt: 'Reporte Gráfico' }
+				{ alt: 'Reporte Gráfico' , id: 1},
+				{ alt: 'Gimnasios', id: 2 },
+				{ alt: 'Reporte Gráfico', id: 3 },
+				{ alt: 'Reporte Gráfico', id: 1 },
+				{ alt: 'Gimnasios', id: 2 }
 			] %}
 			<div class="slider works__slider-in js-slider">
 				{% for item in slider %}
 				    <div class="slide js-slide">
 				    	<div class="slide__mobile">
-				    		<div class="slide__mobile-in" style="background-image: url(img/works-{{loop.index}}-mobile.png);"></div>
+				    		<div class="slide__mobile-in" style="background-image: url(img/works-{{item.id}}-mobile.png);"></div>
 				    	</div>
 				    	<div class="slide__desktop">
-				    		<div class="slide__desktop-in" style="background-image: url(img/works-{{loop.index}}-desktop.png);"></div>
+				    		<div class="slide__desktop-in" style="background-image: url(img/works-{{item.id}}-desktop.png);"></div>
 				    	</div>
 				    </div>
 				{% endfor %}
