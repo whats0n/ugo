@@ -2,6 +2,8 @@
 	position: relative
 	color: $white 
 	background-color: $limedSpruce 
+	+lg
+		background-color: $black 
 	&:before
 		position: absolute
 		content: "" 
@@ -11,26 +13,69 @@
 		height: 10px
 		background-color: $black 
 	&__inner
-		margin-top: 80px
 		padding-bottom: 37px
+		+sm
+			padding-bottom: 20px
 	&__form
 		position: absolute
 		bottom: -24px
 		right: 135px
+		padding: 40px 28px 68px 56px
+		width: 494px
+		background-color: $outerSpace
+		box-shadow: 0 17px 39px 0 rgba(0,0,0,0.41)
+		border-radius: 12px
 		+xl
 			right: 70px
+			border-radius: 0
 		+lg
-			right: 40px
+			position: relative
+			padding: 80px 28px
+			bottom: auto
+			right: auto
+			margin: 0 auto
+			width: auto
+			max-width: 494px
+			box-shadow: none
+			background-color: $limedSpruce  
+		+sm
+			padding: 30px 0 55px
+		&:before,
+		&:after
+			position: absolute
+			content: "" 
+			top: 0
+			bottom: 0
+			width: 50vw
+			background-color: $limedSpruce 
+			display: none
+			+lg
+				display: block
+		&:before,
+			left: 100%
+		&:after
+			right: 100%
+	&__top
+		margin-top: 80px
+		+sm
+			margin-top: 24px
 	&__bottom
 		margin-top: 70px
+		+clr
+		+sm
+			margin-top: 38px
 	&__logo
 		max-width: 57px
 		display: block
+		+lg
+			float: right
 		img
 			max-width: 100%
 			display: block
 	&__contacts
 		padding-right: 500px
+		+lg
+			padding-right: 0
 
 .contacts
 	font-family: $lato
@@ -38,11 +83,18 @@
 	line-height: 1.3
 	font-weight: 400 
 	display: table
+	+sm
+		display: block
 	&__col
 		vertical-align: top
 		display: table-cell
+		+sm
+			display: block
 		&:not(:first-child)
 			padding-left: 55px
+			+sm
+				padding-left: 0
+				margin-top: 25px
 	&__title
 		margin-bottom: 12px
 		font-family: $montserrat
@@ -58,6 +110,8 @@
 .ready
 	padding: 100px 0 103px
 	background-color: $brightSun 
+	+sm
+		padding: 30px 0 35px
 	&__subtitle
 		margin-bottom: 3px
 		letter-spacing: 0.03em 
@@ -66,5 +120,9 @@
 		font-size: 20px
 		font-weight: 300 
 		text-transform: uppercase
+		+sm
+			margin-bottom: 9px 
 	&__title
 		max-width: 490px
+		+sm
+			margin-right: -16px
